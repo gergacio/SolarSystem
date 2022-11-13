@@ -14,6 +14,11 @@ db.solarSystemCollection.insertMany([
         name: "Blq blq",
         fact_1: "blq blq blq blq blq blq"
 
+    },
+    {
+        name: "Yo Yo",
+        fact_1: "IP Man"
+
     }
    
 ]);
