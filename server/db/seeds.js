@@ -1,9 +1,9 @@
 //create database(planets), add collection
 
-use planets
+use solarSystem
 db.dropDatabase();
 
-db.planetsCollection.insertMany([
+db.solarSystemCollection.insertMany([
     {
         "name": "Mercury",
         "pronunciation": "muh-kyuh-ree",
