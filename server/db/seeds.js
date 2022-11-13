@@ -17,7 +17,8 @@ db.solarSystemCollection.insertMany([
     },
     {
         name: "Yo Yo",
-        fact_1: "IP Man"
+        fact_1: "IP Man",
+        fact_2: "Bruce Lee"
 
     }
    
