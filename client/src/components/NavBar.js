@@ -15,6 +15,9 @@ const NavBar = () => {
       <li>
         <Link to="/quiz">get quizz</Link>
       </li>  
+      <li>
+        <Link to="/altplanet">Alternate Planets</Link>
+      </li>  
     </ul>
   );
 }

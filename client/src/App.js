@@ -8,6 +8,7 @@ import Learning from "./components/Learning";
 import Quiz from "./components/Quiz";
 import Footer from "./components/Footer";
 import ErrorPage from "./components/ErrorPage";
+import AltPlanet from "./components/AltPlanet";
 
 function App() {
   //render router with all routes(components)
@@ -18,7 +19,8 @@ function App() {
         <Route exact path="/" element={< Home />} />
         <Route path="/learning" element={< Learning />} />
         <Route path="/quiz" element={< Quiz />} />
-        <Route path="*" element={< ErrorPage />}/>
+        <Route path="*" element={< ErrorPage />} />
+        <Route path="/altplanet" element={< AltPlanet />} />
       </ Routes>
       <Footer />
 </Router>
