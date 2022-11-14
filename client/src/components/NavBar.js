@@ -1,21 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from 'styled-components' 
 
+const Box = styled.div`
+margin: 5px;
+padding: 5px;
+display: flex;
+flex-direction: row;
+`
+
+const UL = styled.ul`
+list-style:none
+`
+const StyledLink = styled(Link)`
+color: white;
+text-decoration: none;
+`
 
 const NavBar = () => {
-
   return (
-    <ul>
+    <Box>
+    <UL>
       <li>
-        <Link to="/">Home</Link>
+        <StyledLink to="/">home</StyledLink>
       </li>
       <li>
-        <Link to="/learning">Learn about planets</Link>
+        <StyledLink to="/learning">learn</StyledLink>
       </li>  
       <li>
-        <Link to="/quiz">get quizz</Link>
+        <StyledLink to="/quiz">quiz</StyledLink>
       </li>  
-    </ul>
+    </UL>
+    </Box>
+
   );
 }
 

@@ -1,4 +1,7 @@
 import React,{ useState, useEffect } from "react";
+import styled from 'styled-components';
+
+
 import Planet from "../components/Planet";
 import PlanetSelector from "../components/PlanetSelector";
 // import PlanetsList from "../components/PlanetsList";
@@ -46,13 +49,17 @@ const onPlanetSelected = function(_id){
     .then(result => setSelectedImage(result))
 }
 
+// const Box = styled.div`
+// background-color: black;
+// `
+
 
     return(
-        <>
+        <div>
           {/* <PlanetsList planets={planets}/>   --- show planets by list */} 
           <PlanetSelector planets={planets} onPlanetSelected={onPlanetSelected}/>
           {selectedPlanet ? <Planet selectedPlanet={selectedPlanet} selectedImage={selectedImage}/> : null}
-        </>
+        </div>
     );
 }
 
