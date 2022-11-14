@@ -17,7 +17,7 @@ min-height: 80vh;
 
 const Learning = () => (
   <Box>
-    <p>journey to</p>
+    <p>Journey to</p>
     <PlanetContainer />
   </Box>
 );
