@@ -1,72 +1,111 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import styled from 'styled-components';
 
-export default function App() {
-  //mock data ..
-	const questions = [
-		{
-			questionText: 'Closest planet to the sun?',
-			answerOptions: [
-				{ answerText: 'Mars', isCorrect: false},//pass it into callback 
-				{ answerText: 'Mercury', isCorrect: true }
-			
-			],
-		},
-		{
-			questionText: 'Failed star?',
-			answerOptions: [
-				{ answerText: 'jupiter', isCorrect: true },
-				{ answerText: 'saturn', isCorrect: false }
-			],
-		}
-	];
+const Box = styled.div`
+margin: 45px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
+padding: 20px;
 
-  //state questions
-	const [currentQuestion, setCurrentQuestion] = useState(0);
-  //state score
-  const [score, setScore] = useState(0);
-  //state show score...init like false...when test finish turn in true..
-	const [showScore, setShowScore] = useState(false);
+min-height: 80vh;	
+`
+const UL = styled.ul`
+list-style:none
+`
+
+
+function Quiz() {
 	
-  //callback func handle click event
-  //pass as argument isCorrect property
-	const handleAnswerClick = (isCorrect) => {
-    //if answer correct update score with 1
-		if (isCorrect) {
-			setScore(score + 1);
-		}
-    //anyway we move to next question
-		const nextQuestion = currentQuestion + 1;
-    //check if we reach the end
-		if (nextQuestion < questions.length) {
-			setCurrentQuestion(nextQuestion);
-		} else {
-			setShowScore(true);
-		}
-	};
-  //if showScore set to true we show score
-  //if false we show quiz
-  //use span to put things on a line
-	return (
-		<div>
-			{showScore ? (
-				<div>
-					You scored {score} out of {questions.length}
-				</div>
-			) : (
-				<>
-					<div>
-						<div>
-							<span>Question {currentQuestion + 1}</span> of {questions.length}
-						</div>
-						<div>{questions[currentQuestion].questionText}</div>
-					</div>
-					<div>
-						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button onClick={() => handleAnswerClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
-						))}
-					</div>
-				</>
-			)}
-		</div>
-	);
+
+  // result state
+  const [showResults, setShowResults] = useState(false);//init as false ..show a question instead
+  //question state
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  //score state
+  const [score, setScore] = useState(0);
+
+  //mock data (questions as arra of)
+  const questions = [
+    {
+      text: "Closest planet to the sun?",
+      options: [
+        { id: 0, text: "Mars", isCorrect: false },
+        { id: 1, text: "Mercury", isCorrect: true }
+    
+      ],
+    },
+    {
+      text: "Failed star?",
+      options: [
+        { id: 0, text: "jupiter", isCorrect: true },
+        { id: 1, text: "saturn", isCorrect: false },
+      ]
+    }
+  ];
+
+  const optionClicked = (isCorrect) => {
+    // increment score by 1
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+	//check end of arr
+    if (currentQuestion + 1 < questions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      setShowResults(true);
+    }
+  };
+
+  //restart Quiz
+  const restartQuizz = () => {
+	//re-set states
+    setScore(0);
+    setCurrentQuestion(0);
+    setShowResults(false);
+  };
+
+  return (
+    <Box>
+		<h1>Solar System Quiz</h1>
+      <h2>Score: {score}</h2>
+
+      {showResults ? (
+       
+        <div>
+          <h1>Final Results</h1>
+          <h2>
+            {score} out of {questions.length} correct - (
+            {(score / questions.length) * 100}%)
+          </h2>
+          <button onClick={() => restartQuizz()}>restart quiz</button>
+        </div>
+      ) : (
+       
+        <div>
+          {/* current question  */}
+          <h2>
+            Question: {currentQuestion + 1} out of {questions.length}
+          </h2>
+          <h3>{questions[currentQuestion].text}</h3>
+
+          {/*  answers  --  */}
+		{/* map questions arr , transform obj into list of li items */}
+          <UL>
+            {questions[currentQuestion].options.map((option) => {
+              return (
+                <li key={option.id} onClick={() => optionClicked(option.isCorrect)}>
+                  <button>{option.text}</button>
+                </li>
+              );
+            })}
+          </UL>
+        </div>
+      )}
+    </Box>
+  );
 }
+
+export default Quiz;

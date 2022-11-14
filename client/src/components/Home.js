@@ -1,14 +1,19 @@
 import React from "react";
 import BackgroundImage from "./BackgroundImage";
+import styled from 'styled-components';
 
+const Box = styled.div`
+margin: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: black;
+min-height: 80vh;
+`
 const Home = () => (
-  <div>
-  
-    <p>Home component render home page</p>
-    <h4>Home</h4>
-    <p>Welcome to our learning system homepage</p>
+  <Box>
     <BackgroundImage />
-  </div>
+  </Box>
 );
 
 export default Home;
