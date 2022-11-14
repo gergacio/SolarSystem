@@ -1,6 +1,11 @@
 import React from "react";
+import styled from "styled-components";
 
 const PlanetSelector = ({planets, onPlanetSelected}) => {
+
+    
+    
+
     //map films and turn obj into jsx options
     const options = planets.map((planet) => {
         return (<option value={planet._id} key={planet._id}>{planet.name}</option>)
