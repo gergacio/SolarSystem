@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import {NavBar as Router, Link} from 'react-router-dom';
 
 
+const ContentBox = styled.div `
+margin: 20px;
+display: flex;
+justify-content: space-between;
+`
+
+
 const Planet = ({selectedPlanet, selectedImage}) => {
-    const StockItem = styled.div `
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-  `
+    
 
 
     return(
@@ -36,6 +39,18 @@ const Planet = ({selectedPlanet, selectedImage}) => {
 
 
         </StockItem>
+        <ContentBox>
+            <img src={selectedImage} alt="planet img"  width={500} height={500}/>  
+            <div>
+                <h1>name: {selectedPlanet.name}</h1>
+                <h2>discovered_by: {selectedPlanet.discovered_by}</h2>
+                <h2>fact_1: {selectedPlanet.fact_1}</h2>
+            </div>
+            
+        </ContentBox>
+
     );
+
+    
 }
 export default Planet;
