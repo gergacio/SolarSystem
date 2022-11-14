@@ -21,7 +21,7 @@ const Planet = ({selectedPlanet, selectedImage}) => {
 
     return(
         <ContentBox>
-            <img src={selectedImage} alt="planet img"  width={400} height={400} border={1}/>  
+            <img src={selectedImage} alt="planet img"  width={400} height={400}/>  
             <div>
                 <h1>Name: {selectedPlanet.name}</h1>
                 <h2>- Discovered by: {selectedPlanet.discovered_by}</h2>
