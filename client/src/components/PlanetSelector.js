@@ -2,21 +2,21 @@ import React from "react";
 import styled from 'styled-components';
 
 
-const Box = styled.div`
-margin: 45px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border: 1px solid black;
-background-image: url("../images/home_img.jpg");
-padding: 20px;
-min-height: 80vh;	
-`
+// const Box = styled.div`
+// margin: 45px;
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// border: 1px solid black;
+// background-image: url("../images/home_img.jpg");
+// padding: 20px;
+// min-height: 80vh;	
+// `
 
 
 
-const PlanetSelector = ({planets, onPlanetSelected}) => {
+const PlanetSelector = ({planets, onPlanetSelected, selectorImage}) => {
 
     
     
@@ -43,6 +43,7 @@ const PlanetSelector = ({planets, onPlanetSelected}) => {
                 {options}
             </select>            
        </div>
+       
     );
 
 }
