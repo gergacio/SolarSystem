@@ -1,6 +1,7 @@
 import React from "react";
 import PlanetContainer from "../containers/PlanetsContainer";
 import styled from 'styled-components';
+const image = require("../images/sky.jpg");
 
 
 const Box = styled.div`
@@ -15,8 +16,10 @@ padding: 20px;
 min-height: 80vh;	
 `
 
+
 const Learning = () => (
-  <Box>
+  <Box style={{ backgroundImage:`url(${image})` }}>
+      
     <p>journey to</p>
     <PlanetContainer />
   </Box>
