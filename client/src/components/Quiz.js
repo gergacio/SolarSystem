@@ -105,7 +105,7 @@ function Quiz() {
       options: [
         { id: 0, text: "Saturn", isCorrect: false },
         { id: 1, text: "Neptune", isCorrect: true },
-        { id: 2, text: "Veuns", isCorrect: false },
+        { id: 2, text: "Venus", isCorrect: false },
         { id: 3, text: "Mars", isCorrect: false },
         { id: 4, text: "Earth", isCorrect: false },
       ]
