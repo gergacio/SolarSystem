@@ -6,6 +6,7 @@ const BackgroundImage = () => {
     const ItemImage = styled.img `
     height: 500px;
   `
+  
     return(
         <div>
              <ItemImage src={require("../images/sun.jpg")} alt="item" />

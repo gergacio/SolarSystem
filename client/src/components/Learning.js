@@ -1,6 +1,7 @@
 import React from "react";
 import PlanetContainer from "../containers/PlanetsContainer";
 import styled from 'styled-components';
+import img from '../images/sky.jpg';
 
 
 const Box = styled.div`
@@ -11,7 +12,8 @@ justify-content: center;
 align-items: center;
 border: 1px solid black;
 padding: 20px;
-background-color: black;
+background-image: url(${img});
+
 
 min-height: 80vh;	
 
