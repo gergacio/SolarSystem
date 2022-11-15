@@ -6,7 +6,7 @@ import BackgroundImage from "./BackgroundImage";
 
 const spintransition = {
     loop: Infinity,
-    duration: 35
+    duration: 30
 }
 
  const Sun = () => {

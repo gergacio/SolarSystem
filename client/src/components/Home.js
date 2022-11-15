@@ -10,7 +10,7 @@ justify-content: center;
 align-items: center;
 background-color: black;
 min-height: 80vh;
-
+z-index: -1;
 `
 const Home = () => (
   <Box>
