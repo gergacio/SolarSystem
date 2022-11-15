@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLinkClickHandler } from "react-router-dom";
 import styled from 'styled-components';
 
 
@@ -14,35 +15,46 @@ import styled from 'styled-components';
 // min-height: 80vh;	
 // `
 
+const ImageOfPlanet = styled.input`
+height: 50px;
+margin: 20px;
+padding: 10px;
 
+`
+const SelectorDiv = styled.div`
+display: flex;
+
+
+`
 
 const PlanetSelector = ({planets, onPlanetSelected, selectorImage}) => {
 
     
     
 
-    //map films and turn obj into jsx options
-    const options = planets.map((planet) => {
-        return (<option value={planet._id} key={planet._id}>{planet.name}</option>)
+    const planetImages = planets.map((planet) => {
+        return (
+            <Link>
+                <ImageOfPlanet type="image" value={planet._id} key={planet._id} src={planet.img} onClick={ClickHandler}/>
+            </Link>
+        );
+        
+        
+        
     });
     //event handler
-    function onChange(event){
+    function ClickHandler(event){
         //find selected film pass it to define on top level func comming as props
-       console.log(event.target.value);
        onPlanetSelected(event.target.value);
         
     }
 
 
-    //define select dropdown..attach event onChange
     return(
-       <div> 
-            {/* <div style={{ backgroundImage: `url(${backgroundImg})` }}> */}
-            <select defaultValue="DEFAULT" onChange={onChange}>
-                <option  value="DEFAULT">Solar System</option>
-                {options}
-            </select>            
-       </div>
+       <selectorImage> 
+            {planetImages}
+
+       </selectorImage>
        
     );
 

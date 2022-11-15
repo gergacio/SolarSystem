@@ -2,6 +2,7 @@ import React from "react";
 import PlanetContainer from "../containers/PlanetsContainer";
 import styled from 'styled-components';
 
+const url = require("../images/stars.jpg");
 
 const Box = styled.div`
 margin: 45px;
@@ -12,8 +13,10 @@ align-items: center;
 border: 1px solid black;
 padding: 20px;
 background-color: black;
-
+background-image: url(${url});
+color: white;
 min-height: 80vh;	
+
 
 
 `
