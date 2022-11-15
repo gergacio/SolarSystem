@@ -1,6 +1,7 @@
 import React from "react";
 import BackgroundImage from "./BackgroundImage";
 import styled from 'styled-components';
+import ReactPlayer from 'react-player';
 
 const Box = styled.div`
 margin: 45px;
@@ -12,7 +13,13 @@ min-height: 80vh;
 `
 const Home = () => (
   <Box>
-    <BackgroundImage />
+    <ReactPlayer
+
+      url="https://www.youtube.com/embed/" 
+      playing={true}
+    />
+
+
   </Box>
 );
 
