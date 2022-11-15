@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundImage from "./BackgroundImage";
+//import BackgroundImage from "./BackgroundImage";
 import styled from 'styled-components';
 import Sun from "./Sun";
 
