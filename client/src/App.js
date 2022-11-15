@@ -8,22 +8,30 @@ import Learning from "./components/Learning";
 import Quiz from "./components/Quiz";
 import Footer from "./components/Footer";
 import ErrorPage from "./components/ErrorPage";
+import styled from "styled-components";
+
+//display parent as flex
+const StyledRouter = styled.div`
+display: flex;
+flex-direction: column;
+`
 
 function App() {
+
   //render router with all routes(components)
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route exact path="/" element={< Home />} />
-        <Route path="/learning" element={< Learning />} />
-        <Route path="/quiz" element={< Quiz />} />
-        <Route path="*" element={< ErrorPage />}/>
-      </ Routes>
-      <Footer />
-</Router>
- 
- 
+      <StyledRouter>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={< Home />} />
+          <Route path="/learning" element={< Learning />} />
+          <Route path="/quiz" element={< Quiz />} />
+          <Route path="*" element={< ErrorPage />}/>
+        </ Routes>
+        <Footer />
+      </StyledRouter>
+    </Router>
   );
 }
 
