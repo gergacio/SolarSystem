@@ -16,7 +16,7 @@ import styled from 'styled-components';
 
 
 
-const PlanetSelector = ({planets, onPlanetSelected}) => {
+const PlanetSelector = ({planets, onPlanetSelected, selectorImage}) => {
 
     
     
@@ -39,10 +39,11 @@ const PlanetSelector = ({planets, onPlanetSelected}) => {
        <div> 
             {/* <div style={{ backgroundImage: `url(${backgroundImg})` }}> */}
             <select defaultValue="DEFAULT" onChange={onChange}>
-                <option  value="DEFAULT">solar system</option>
+                <option  value="DEFAULT">Solar System</option>
                 {options}
             </select>            
        </div>
+       
     );
 
 }

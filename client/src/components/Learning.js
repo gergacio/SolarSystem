@@ -11,13 +11,16 @@ justify-content: center;
 align-items: center;
 border: 1px solid black;
 padding: 20px;
+background-color: black;
 
 min-height: 80vh;	
+
+
 `
 
 const Learning = () => (
   <Box>
-    <p>journey to</p>
+    <p>Journey to</p>
     <PlanetContainer />
   </Box>
 );

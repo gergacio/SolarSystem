@@ -6,7 +6,6 @@ background-color: black;
 display: flex;
 justify-content: center;
 margin-top: auto;
-
 `
 
 const Footer = () => (
