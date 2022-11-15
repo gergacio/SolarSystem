@@ -12,7 +12,7 @@ align-items: center;
 border: 1px solid black;
 padding: 20px;
 background-color: black;
-
+color: white;
 min-height: 80vh;	
 
 
