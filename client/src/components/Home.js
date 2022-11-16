@@ -2,6 +2,7 @@ import React from "react";
 //import BackgroundImage from "./BackgroundImage";
 import styled from 'styled-components';
 import Sun from "./Sun";
+import { Link } from "react-router-dom";
 
 
 const Box = styled.div`
@@ -16,8 +17,12 @@ z-index: -1;
 const Home = () => (
   <Box>
     {/* <BackgroundImage /> */}
-    <Sun />
+      <Sun />
   </Box>
 );
 
 export default Home;
+
+
+    // <Link to="/quiz">
+    // </Link>

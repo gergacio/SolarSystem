@@ -1,6 +1,4 @@
 import React,{ useState, useEffect } from "react";
-import styled from 'styled-components';
-
 
 import Planet from "../components/Planet";
 import PlanetSelector from "../components/PlanetSelector";
@@ -15,7 +13,6 @@ const PlanetContainer = () => {
    //another state - selected planet
    const [ selectedPlanet, setSelectedPlanet ] = useState(null);
    //console.log("one selected planet",selectedPlanet);
-   console.log("---------");
 
    //another state - futher fetch to grab selected planet image
    const [ selectedImage, setSelectedImage ] = useState(null);
@@ -47,7 +44,18 @@ const onPlanetSelected = function(_id){
     .then(res => res.blob())
     .then(data => URL.createObjectURL(data))
     .then(result => setSelectedImage(result))
+
+    //updte content
+    //console.log(planet.source);
+    // fetch(planet.source)
+    // .then(res => res.json())
+    // .then(result => setContent(result))
+
+    // console.log(content);
+
 }
+
+
 
 // const Box = styled.div`
 // background-color: black;

@@ -15,9 +15,6 @@ background-color: black;
 background-image: url(${url});
 color: white;
 min-height: 80vh;	
-
-
-
 `
 
 const Learning = () => (

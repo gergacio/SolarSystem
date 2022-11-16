@@ -14,15 +14,12 @@ padding: 0.5em;
 text-align: center;
 `
 
-
-
-
 const Planet = ({selectedPlanet, selectedImage}) => {
- const [audio] = useState(new Audio)   
-const clickHandler = (event) => {
-    const audio = event.target.value
-}
 
+    const handleClick = url => {
+        window.open(url);
+    }
+    
     return(
         <ContentBox>
             <img src={selectedImage} alt="planet img"  width={400} height={400}/>  
@@ -34,10 +31,8 @@ const clickHandler = (event) => {
                 <h2>- Distance to Sun: {selectedPlanet.distance_to_sun}</h2>
                 <h2>- Average temperature Fahrenheit: {selectedPlanet.avg_temp_fahrenheit}</h2>
                 <h2>- Rotation in days: {selectedPlanet.rotation}</h2>
-                
-
                 {/* <Link onClick={clickHandler} value={selectedPlanet.audio} src={selectedPlanet.audio}>- Play sound: </Link> */}
-                
+                <button onClick={() => handleClick(selectedPlanet.source)}><small>external resources</small></button>
             </div>
             
         </ContentBox>
