@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
 
+const url = require("../images/sky.jpg");
+
+
 const Box = styled.div`
 margin: 45px;
 display: flex;
@@ -9,11 +12,15 @@ justify-content: center;
 align-items: center;
 border: 1px solid black;
 padding: 20px;
+background-image: url(${url});
+color: white;
+
 
 min-height: 80vh;	
 `
 const UL = styled.ul`
 list-style:none
+
 `
 const Button = styled.button`
 display: flex;

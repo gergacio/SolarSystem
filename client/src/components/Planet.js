@@ -33,6 +33,9 @@ const clickHandler = (event) => {
                 <h2>- Profile: {selectedPlanet.profile}</h2>
                 <h2>- Distance to Sun: {selectedPlanet.distance_to_sun}</h2>
                 <h2>- Average temperature Fahrenheit: {selectedPlanet.avg_temp_fahrenheit}</h2>
+                <h2>- Rotation in days: {selectedPlanet.rotation}</h2>
+                
+
                 {/* <Link onClick={clickHandler} value={selectedPlanet.audio} src={selectedPlanet.audio}>- Play sound: </Link> */}
                 
             </div>
