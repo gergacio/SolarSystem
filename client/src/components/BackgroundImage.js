@@ -10,14 +10,12 @@ height: 500px;
 
 
 const BackgroundImage = () => {
-  function handleClick(e){
-    console.log(e.target.value);
-  }
+  
 
     return(
         <div>
              
-             <Link><ItemImage src={image} alt="item" onClick={handleClick}/></Link>
+             <Link><ItemImage src={image} alt="item"/></Link>
             
              
 
