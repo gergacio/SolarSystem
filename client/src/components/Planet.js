@@ -42,16 +42,16 @@ const Planet = ({selectedPlanet, selectedImage}) => {
             <span className="font-link">
                 <h1>Name: {selectedPlanet.name}</h1>
                 <SoundButton onClick={playsound} value={selectedPlanet.audio}>
-                    Pronunciation: 
+                🔊Pronunciation: 
                 </SoundButton>
-                <h2>- Pronunciation: {selectedPlanet.pronunciation}</h2>
-                <h2>- Discovered by: {selectedPlanet.discovered_by}</h2>
-                <h2>- Date of discovery: {selectedPlanet.date_of_discovery}</h2>
-                <h2>- Profile: {selectedPlanet.profile}</h2>
-                <h2>- Distance to Sun: {selectedPlanet.distance_to_sun}</h2>
-                <h2>- Average temperature Fahrenheit: {selectedPlanet.avg_temp_fahrenheit}</h2>
-                <h2>- Rotation in days: {selectedPlanet.rotation}</h2>
-                <h2>- Radius: {selectedPlanet.radius}</h2>
+                <h2>✨ Pronunciation: {selectedPlanet.pronunciation}</h2>
+                <h2>✨ Discovered by: {selectedPlanet.discovered_by}</h2>
+                <h2>✨ Date of discovery: {selectedPlanet.date_of_discovery}</h2>
+                <h2>✨ Profile: {selectedPlanet.profile}</h2>
+                <h2>✨ Distance to Sun: {selectedPlanet.distance_to_sun}</h2>
+                <h2>✨ Average temperature Fahrenheit: {selectedPlanet.avg_temp_fahrenheit}</h2>
+                <h2>✨ Rotation in days: {selectedPlanet.rotation}</h2>
+                <h2>✨ Radius: {selectedPlanet.radius}</h2>
                 {/* <Link onClick={clickHandler} value={selectedPlanet.audio} src={selectedPlanet.audio}>- Play sound: </Link> */}
                 <button onClick={() => handleClick(selectedPlanet.source)}><small>external resources</small></button>
                 </span>
