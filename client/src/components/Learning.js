@@ -17,8 +17,10 @@ color: white;
 min-height: 80vh;	
 `
 
+
+
 const Learning = () => (
-  <Box>
+  <Box className="font-link">
     <p>JOURNEY TO</p>
     <PlanetContainer />
   </Box>
