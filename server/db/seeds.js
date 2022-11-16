@@ -3,8 +3,124 @@
 use solarSystem
 db.dropDatabase();
 
+db.quiz.insertMany([
+        {
+          "text": "What planet is closest to our Sun?",
+          "options": [
+            { "id": "0", "text": "Mars", "isCorrect": "false" },
+            { "id": "1", "text": "Pluto", "isCorrect": "false" },
+            { "id": "2", "text": "Venus", "isCorrect": "false" },
+            { "id": "3", "text": "Titan", "isCorrect": "false" },
+            { "id": "4", "text": "Mercury", "isCorrect": "true" }
+        
+          ],
+        },
+        {
+          "text": "Which planet is a failed star?",
+          "options": [
+              { "id": "0", "text": "Neptune", "isCorrect": "false" },
+              { "id": "1", "text": "Mercury", "isCorrect": "false" },
+              { "id": "2", "text": "Jupiter", "isCorrect": "true" },
+              { "id": "3", "text": "Earth", "isCorrect": "false" },
+              { "id": "4", "text": "Mars", "isCorrect": "false" },
+          ]
+        },
+        {
+          "text": "Which planet is often referred to as the Red Planet?",
+          "options": [
+                { "id": "0", "text": "Uranus", "isCorrect": "false" },
+                { "id": "1", "text": "Mars", "isCorrect": "true" },
+            { "id": "2", "text": "Saturn", "isCorrect": "false" },
+            { "id": "3", "text": "Neptune", "isCorrect": "false" },
+            { "id": "4", "text": "Earth", "isCorrect": "false" },
+          ]
+        },
+        {
+          "text": "Which is the coldest planet out of the selection below?",
+          "options": [
+            { "id": "0", "text": "Earth", "isCorrect": "false" },
+            { "id": "1", "text": "Jupiter", "isCorrect": "false" },
+            { "id": "2", "text": "Mars", "isCorrect": "false" },
+            { "id": "3", "text": "Mercury", "isCorrect": "false" },
+            { "id": "4", "text": "Saturn", "isCorrect": "true" },
+          ]
+        },
+        {
+          "text": "Which planet has a radius of 25,362km?",
+          "options": [
+            { "id": "0", "text": "Mars", "isCorrect": "false" },
+            { "id": "1", "text": "Earth", "isCorrect": "false" },
+            { "id": "2", "text": "Venus", "isCorrect": "false" },
+            { "id": "3", "text": "Uranus", "isCorrect": "true" },
+            { "id": "4", "text": "Jupiter", "isCorrect": "false" },
+          ]
+        },
+        {
+          "text": "It takes sunlight 43 minutes to reach which planet?",
+          "options": [
+            { "id": "0", "text": "Jupiter", "isCorrect": "true" },
+            { "id": "1", "text": "Venus", "isCorrect": "false" },
+            { "id": "2", "text": "Neptune", "isCorrect": "false" },
+            { "id": "3", "text": "Uranus", "isCorrect": "false" },
+            { "id": "4", "text": "Saturn", "isCorrect": "false" },
+          ]
+        },
+        {
+          "text": "Which planets have a ring system similar to Saturn?",
+          "options": [
+            { "id": "0", "text": "Earth", "isCorrect": "false" },
+            { "id": "1", "text": "Mercury", "isCorrect": "false" },
+            { "id": "2", "text": "Neptune", "isCorrect": "true" },
+            { "id": "3", "text": "Mars", "isCorrect": "false" },
+            { "id": "4", "text": "Uranus", "isCorrect": "true" },
+          ]
+        },
+        {
+          "text": "Which planet has a 16 hour day?",
+          "options": [
+            { "id": "0", "text": "Saturn", "isCorrect": "false" },
+            { "id": "1", "text": "Neptune", "isCorrect": "true" },
+            { "id": "2", "text": "Venus", "isCorrect": "false" },
+            { "id": "3", "text": "Mars", "isCorrect": "false" },
+            { "id": "4", "text": "Earth", "isCorrect": "false" },
+          ]
+        },
+        {
+          "text": "Jupiter has how many moons?",
+          "options": [
+            { "id": "0", "text": "7", "isCorrect": "false" },
+            { "id": "1", "text": "111", "isCorrect": "false" },
+            { "id": "2", "text": "63", "isCorrect": "false" },
+            { "id": "3", "text": "39", "isCorrect": "false" },
+            { "id": "4", "text": "67", "isCorrect": "true" },
+          ]
+        },
+        {
+          "text": "How many billions of kilometers is Neptune from the Sun?",
+          "options": [
+            { "id": "0", "text": "4.4737", "isCorrect": "false" },
+            { "id": "1", "text": "4.4738", "isCorrect": "true" },
+            { "id": "2", "text": "4.4739", "isCorrect": "false" },
+            { "id": "3", "text": "4.4740", "isCorrect": "false" },
+            { "id": "4", "text": "A lot", "isCorrect": "true" },
+          ]
+        },
+        {
+          "text": "Starbucks has opened 33,833 stores on which planet?",
+          "options": [
+            { "id": "0", "text": "Pluto", "isCorrect": "false" },
+            { "id": "1", "text": "Earth", "isCorrect": "true" },
+            { "id": "2", "text": "Saturn", "isCorrect": "false" },
+            { "id": "3", "text": "Mars", "isCorrect": "false" },
+            { "id": "4", "text": "Venus", "isCorrect": "false" },
+          ]
+        }
+      ]
+)  
+
 db.solarSystemCollection.insertMany([
-    {
+
+{
         "name": "Mercury",
         "pronunciation": "muh-kyuh-ree",
         "length_of_year": "88 Earth days", 
@@ -23,7 +139,7 @@ db.solarSystemCollection.insertMany([
         "distance_to_sun": "68.517", // million km
         "sunlight_contact": "3.2", // minutes
         "profile": "The smallest planet in our solar system and the closest to the sun. The BepiColombo spacecraft is scheduled to arrive at Mercury in 2025",
-        "audio": "https://upload.wikimedia.org/wikipedia/commons/e/e4/En-us-mercury.ogg",
+        "audio": "`https://upload.wikimedia.org/wikipedia/commons/e/e4/En-us-mercury.ogg`",
         "source": "https://en.wikipedia.org/wiki/Mercury_(planet)"    
     },
     {
