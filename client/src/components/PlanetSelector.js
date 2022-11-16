@@ -16,10 +16,9 @@ import styled from 'styled-components';
 // `
 
 const ImageOfPlanet = styled.input`
-height: 480px;
-width: 60px;
-margin: 0.8px;
-padding: 0.8px;
+height: 50px;
+margin: 20px;
+padding: 10px;
 
 `
 const SelectorDiv = styled.div`
