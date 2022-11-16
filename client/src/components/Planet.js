@@ -16,8 +16,10 @@ padding: 0.5em;
 text-align: center;
 `
 const SoundButton = styled.button `
-background-color: white;
+background-color: black;
 height: 3rem;
+border: 2px solid gold;
+color: gold;
 `
 
 //https://upload.wikimedia.org/wikipedia/commons/e/e4/En-us-mercury.ogg
@@ -42,7 +44,7 @@ const Planet = ({selectedPlanet, selectedImage}) => {
             <span className="font-link">
                 <h1>Name: {selectedPlanet.name}</h1>
                 <SoundButton onClick={playsound} value={selectedPlanet.audio}>
-                🔊Pronunciation: 
+                🔊Pronunciation 
                 </SoundButton>
                 <h2>✨ Pronunciation: {selectedPlanet.pronunciation}</h2>
                 <h2>✨ Discovered by: {selectedPlanet.discovered_by}</h2>
