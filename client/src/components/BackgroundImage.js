@@ -9,7 +9,6 @@ const BackgroundImage = () => {
     return(
         <div>
              <ItemImage src={require("../images/sun.jpg")} alt="item" />
-
         </div>
        
     );

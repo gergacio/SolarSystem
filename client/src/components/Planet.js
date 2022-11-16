@@ -16,10 +16,14 @@ text-align: center;
 
 
 
+
+
 const Planet = ({selectedPlanet, selectedImage}) => {
+
+    const handleClick = url => {
+        window.open(url);
+    }
     
-
-
     return(
         <ContentBox>
             <img src={selectedImage} alt="planet img"  width={400} height={400}/>  
@@ -30,6 +34,7 @@ const Planet = ({selectedPlanet, selectedImage}) => {
                 <h2>- Profile: {selectedPlanet.profile}</h2>
                 <h2>- Distance to Sun: {selectedPlanet.distance_to_sun}</h2>
                 <h2>- Average temperature Fahrenheit: {selectedPlanet.avg_temp_fahrenheit}</h2>
+                <button onClick={() => handleClick(selectedPlanet.source)}><small>external resources</small></button>
             </div>
             
         </ContentBox>
