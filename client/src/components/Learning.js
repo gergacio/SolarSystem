@@ -2,8 +2,7 @@ import React from "react";
 import PlanetContainer from "../containers/PlanetsContainer";
 import styled from 'styled-components';
 
-const url = require("../images/stars.jpg");
-
+const url = require("../images/sky.jpg");
 const Box = styled.div`
 margin: 45px;
 display: flex;
@@ -20,7 +19,7 @@ min-height: 80vh;
 
 const Learning = () => (
   <Box>
-    {/* <p>Journey to</p> */}
+    <p>JOURNEY TO</p>
     <PlanetContainer />
   </Box>
 );
