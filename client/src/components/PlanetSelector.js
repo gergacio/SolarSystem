@@ -29,9 +29,6 @@ display: flex;
 
 const PlanetSelector = ({planets, onPlanetSelected, selectorImage}) => {
 
-    
-    
-
     const planetImages = planets.map((planet) => {
         return (
             <Link>
