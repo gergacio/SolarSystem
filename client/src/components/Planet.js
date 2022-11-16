@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+// import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 const ContentBox = styled.div `
@@ -10,15 +11,17 @@ background-color: black;
 font-size: 0.5em;
 border: 1px solid black;
 padding: 0.5em;
-text-align: center; 
+text-align: center;
 `
 
 
 
 
 const Planet = ({selectedPlanet, selectedImage}) => {
-    
-
+ const [audio] = useState(new Audio)   
+const clickHandler = (event) => {
+    const audio = event.target.value
+}
 
     return(
         <ContentBox>
@@ -30,6 +33,8 @@ const Planet = ({selectedPlanet, selectedImage}) => {
                 <h2>- Profile: {selectedPlanet.profile}</h2>
                 <h2>- Distance to Sun: {selectedPlanet.distance_to_sun}</h2>
                 <h2>- Average temperature Fahrenheit: {selectedPlanet.avg_temp_fahrenheit}</h2>
+                {/* <Link onClick={clickHandler} value={selectedPlanet.audio} src={selectedPlanet.audio}>- Play sound: </Link> */}
+                
             </div>
             
         </ContentBox>
