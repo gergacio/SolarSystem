@@ -19,8 +19,11 @@ MongoClient.connect('mongodb://127.0.0.1:27017', { useUnifiedTopology: true }, (
   const db = client.db('solarSystem');
   const planetsCollection = db.collection('solarSystemCollection');
   const planetsRouter = createRouter(planetsCollection)
+  const quizCollection = db.collection('quiz');
+  const quizRouter = createRouter(quizCollection)
+  app.use('/api/quiz', quizRouter);
   app.use('/api/planets', planetsRouter);
-
+  
   app.listen(9000, function(){
     console.log(`app listening on port ${this.address().port}`);
   })

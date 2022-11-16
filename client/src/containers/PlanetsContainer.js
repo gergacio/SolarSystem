@@ -10,6 +10,8 @@ const PlanetContainer = () => {
    const [ planets, setPlanets ] = useState([]);
   // console.log("planets :",planets[0]);
 
+
+
    //another state - selected planet
    const [ selectedPlanet, setSelectedPlanet ] = useState(null);
    //console.log("one selected planet",selectedPlanet);
@@ -23,6 +25,7 @@ const PlanetContainer = () => {
     PlanetsService.getPlanets()
       .then(p => setPlanets(p))
   }, [])
+
 
   //onPlanetSelected - callback func passed down sa prop..get id..coming back ..define it here..invoke ot there
 //console.log(planets);
