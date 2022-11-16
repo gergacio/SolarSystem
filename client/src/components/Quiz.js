@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
 
+const url = require("../images/sky.jpg");
+
+
 const Box = styled.div`
 margin: 45px;
 display: flex;
@@ -9,13 +12,24 @@ justify-content: center;
 align-items: center;
 border: 1px solid black;
 padding: 20px;
+background-image: url(${url});
+color: white;
+
 
 min-height: 80vh;	
 `
 const UL = styled.ul`
 list-style:none
-`
 
+`
+const Button = styled.button`
+display: flex;
+justify-contect: row;
+align-items: row;
+border: 1px solid black;
+
+
+`
 
 function Quiz() {
 	
@@ -193,7 +207,7 @@ function Quiz() {
             {questions[currentQuestion].options.map((option) => {
               return (
                 <li key={option.id} onClick={() => optionClicked(option.isCorrect)}>
-                  <button>{option.text}</button>
+                  <Button>{option.text}</Button>
                 </li>
               );
             })}
