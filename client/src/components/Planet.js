@@ -1,6 +1,6 @@
 
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 
@@ -24,10 +24,6 @@ height: 3rem;
 
 
 const Planet = ({selectedPlanet, selectedImage}) => {
-
-
-
-
     const playsound = (event) => {   //onclick 39
         const url = event.target.value
         const sound = new Audio(url)
@@ -40,15 +36,7 @@ const Planet = ({selectedPlanet, selectedImage}) => {
     return(
         <ContentBox> 
             <img src={selectedImage} alt="planet img"  width={400} height={400}/>  
-            <input type="image" src={selectedImage} onClick={playsound} value={selectedPlanet.audio} width={400} height={400}></input>
-            <Link to="/">
-             <h1>
-                click me
-             </h1>
-            </Link>
-            <a>
-
-            </a>
+            {/* <input type="image" src={selectedImage} onClick={playsound} value={selectedPlanet.audio} width={400} height={400}></input> */}
 
             <div>
                 <h1>Name: {selectedPlanet.name}</h1>
