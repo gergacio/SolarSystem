@@ -21,11 +21,7 @@ margin: 20px;
 padding: 10px;
 
 `
-const SelectorDiv = styled.div`
-display: flex;
 
-
-`
 
 const PlanetSelector = ({planets, onPlanetSelected, selectorImage}) => {
 
@@ -53,7 +49,6 @@ const PlanetSelector = ({planets, onPlanetSelected, selectorImage}) => {
     return(
        <selectorImage> 
             {planetImages}
-
        </selectorImage>
        
     );

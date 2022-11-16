@@ -1,14 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
+const image = require("../images/sun.jpg");
+
+
+const ItemImage = styled.img `
+height: 500px;
+`
 
 
 const BackgroundImage = () => {
-    const ItemImage = styled.img `
-    height: 500px;
-  `
+  function handleClick(e){
+    console.log(e.target.value);
+  }
+
     return(
         <div>
-             <ItemImage src={require("../images/sun.jpg")} alt="item" />
+             
+             <Link><ItemImage src={image} alt="item" onClick={handleClick}/></Link>
+            
+             
 
         </div>
        
