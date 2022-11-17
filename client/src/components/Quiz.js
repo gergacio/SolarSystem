@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
 
-const url = require("../images/sky.jpg");
+const url = require("../images/stars.jpg");
 
 
 const Box = styled.div`
@@ -10,11 +10,11 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border: 1px solid black;
+border: 2px solid black;
 padding: 20px;
 background-image: url(${url});
 color: white;
-min-height: 80vh;
+min-height: 80vh;	
 `
 const UL = styled.ul`
 list-style:none
@@ -24,8 +24,10 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: row;
-border: 1px solid yellow;
+border: 5px solid black;
+border-color: black;
 `
+
 const ButtonsContainer = styled.div`
 display: flex;
 flex-direction: row;
@@ -69,13 +71,13 @@ function Quiz({quizData}) {
   };
 
   return (
-    <Box>
+    <Box className="font-link">
 		<h1>Solar System Quiz</h1>
       <h2>Score: {score}</h2>
 
       {showResults ? (
        
-        <div>
+        <div className="font-link">
           <h1>Final Score</h1>
           <h2>
             {score} out of {questions.length} correct  (
@@ -85,7 +87,7 @@ function Quiz({quizData}) {
         </div>
       ) : (
        
-        <div>
+        <div className="font-link">
           {/* current question  */}
           <h2>
             Question: {currentQuestion + 1} out of {questions.length}
@@ -94,7 +96,7 @@ function Quiz({quizData}) {
 
           {/*  answers  --  */}
 		{/* map questions arr , transform obj into list of li items */}
-          <UL>
+          <UL className="font-link">
             {questions[currentQuestion].options.map((option) => {
               return (
                 <ButtonsContainer>
