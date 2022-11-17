@@ -13,7 +13,7 @@ background-color: black;
 font-size: 0.5em;
 border: 1px solid black;
 padding: 0.5em;
-text-align: center;
+text-align: left
 `
 const SoundButton = styled.button `
 background-color: white;
@@ -40,15 +40,19 @@ const Planet = ({selectedPlanet, selectedImage}) => {
 
             <div>
                 <h1>Name: {selectedPlanet.name}</h1>
-                <SoundButton onClick={playsound} value={selectedPlanet.audio}>
-                    Pronunciation: 
+                <SoundButton 
+                onClick={playsound} 
+                value={selectedPlanet.audio}>{selectedPlanet.pronunciation}
                 </SoundButton>
-                <h2>- Discovered by: {selectedPlanet.discovered_by}</h2>
-                <h2>- Date of discovery: {selectedPlanet.date_of_discovery}</h2>
-                <h2>- Profile: {selectedPlanet.profile}</h2>
-                <h2>- Distance to Sun: {selectedPlanet.distance_to_sun}</h2>
-                <h2>- Average temperature Fahrenheit: {selectedPlanet.avg_temp_fahrenheit}</h2>
-                <h2>- Rotation in days: {selectedPlanet.rotation}</h2>
+
+                <h2><strong>-Discovered by:</strong>{selectedPlanet.discovered_by}</h2>
+                <h2>- <strong>Date of discovery:</strong> {selectedPlanet.date_of_discovery}</h2>
+                <h2>- <strong>Profile:</strong> {selectedPlanet.profile}</h2>
+                <h2>- <strong>Distance to Sun:</strong> {selectedPlanet.distance_to_sun}</h2>
+                <h2>- <strong>Average temperature Fahrenheit:</strong> {selectedPlanet.avg_temp_fahrenheit}</h2>
+                <h2>- <strong>Rotation in days:</strong> {selectedPlanet.rotation}</h2>
+                <h2>- <strong>Fun facts:</strong> {selectedPlanet.fact_1}</h2>
+                <h2>- <strong>- </strong>{selectedPlanet.fact_2}</h2>
                 {/* <Link onClick={clickHandler} value={selectedPlanet.audio} src={selectedPlanet.audio}>- Play sound: </Link> */}
                 <button onClick={() => handleClick(selectedPlanet.source)}><small>external resources</small></button>
             </div>

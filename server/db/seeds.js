@@ -126,7 +126,7 @@ db.solarSystemCollection.insertMany([
         "length_of_year": "88 Earth days", 
         "fact_1": "Our Solar Systems smallest planet as Pluto has been disqualified",
         "fact_2": "It might have previously had magma oceans",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/600px-Mercury_in_true_color.jpg", //%28 %29 may need to be replaced with ()
+        "img": "https://i.natgeofe.com/n/c6f7cee9-cde6-44a2-a686-9a80f5bfc1e8/01_mercury_pia15190_orig.jpg?w=636&h=636", 
         "gif": "https://media1.giphy.com/media/l0HlO4V8iCRME3i0g/giphy.gif?cid=790b7611ea699bd37fdc474308fd03ff9a0504b403a52ceb&rid=giphy.gif&ct=g",
         "number_of_moons": "0",
         "avg_temp_celsius": "178",
@@ -139,7 +139,7 @@ db.solarSystemCollection.insertMany([
         "distance_to_sun": "68.517", // million km
         "sunlight_contact": "3.2", // minutes
         "profile": "The smallest planet in our solar system and the closest to the sun. The BepiColombo spacecraft is scheduled to arrive at Mercury in 2025",
-        "audio": "`https://upload.wikimedia.org/wikipedia/commons/e/e4/En-us-mercury.ogg`",
+        "audio": "https://upload.wikimedia.org/wikipedia/commons/e/e4/En-us-mercury.ogg",
         "source": "https://en.wikipedia.org/wiki/Mercury_(planet)"    
     },
     {
@@ -148,7 +148,7 @@ db.solarSystemCollection.insertMany([
         "length_of_year": "225 Earth years", 
         "fact_1": "Was the first planet to be explored by Spacecraft!",
         "fact_2": "Unlike most of the planets in our Solar System, Venus spins clockwise",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Venus_2_Approach_Image.jpg", 
+        "img": "https://upload.wikimedia.org/wikipedia/commons/5/54/Venus_-_December_23_2016.png", 
         "gif": "https://media4.giphy.com/media/l0MYB89UFsVqLY5oc/giphy.gif?cid=790b7611e3196e9dbc53a3ddc5c3cbeaead73cc58721d6c2&rid=giphy.gif&ct=g",
         "number_of_moons": "0",
         "avg_temp_celsius": "452",
@@ -236,7 +236,7 @@ db.solarSystemCollection.insertMany([
         "length_of_year": "29.5 Earth years", 
         "fact_1": "Has the biggest and brightest rings in our solar system",
         "fact_2": "Saturn is a gas giant so you cannot stand on it!",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg", 
+        "img": "https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3NhdHVybi1sZWFkLWltYWdlLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ODI4fSwidG9Gb3JtYXQiOiJhdmlmIn19", 
         "gif": "https://thumbs.gfycat.com/ImmaculateEthicalIberianbarbel-mobile.mp4",
         "number_of_moons": "83",
         "avg_temp_celsius": "-176",
@@ -248,7 +248,7 @@ db.solarSystemCollection.insertMany([
         "radius": "58,232",
         "distance_to_sun": "1.4712",  // BILLION km
         "sunlight_contact": "79.3", // minutes
-        "profile": "Although not the only planet in the Solar System with rings, Saturn's is by far the most prominent. Although 83 moons have been confirmed, only 53 are officially named",
+        "profile": "Although not the only planet in the Solar System with rings, Saturn's is by far the most prominent. With 83 confirmed moons, only 53 are officially named",
         "audio": "https://upload.wikimedia.org/wikipedia/commons/9/90/En-us-Saturn.ogg",
         "source": "https://en.wikipedia.org/wiki/Saturn"
     }, 

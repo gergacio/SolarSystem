@@ -14,6 +14,9 @@ background-color: black;
 min-height: 80vh;
 z-index: -1;
 `
+
+
+
 const Home = () => (
   <Box>
     {/* <BackgroundImage /> */}
@@ -23,6 +26,10 @@ const Home = () => (
 
 export default Home;
 
+{/* <SoundButton 
+onClick={playsound} 
+value={selectedPlanet.audio}>{selectedPlanet.pronunciation}
+</SoundButton> */}
 
     // <Link to="/quiz">
     // </Link>

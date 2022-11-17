@@ -14,21 +14,23 @@ border: 1px solid black;
 padding: 20px;
 background-image: url(${url});
 color: white;
-
-
-min-height: 80vh;	
+min-height: 80vh;
 `
 const UL = styled.ul`
 list-style:none
-
 `
 const Button = styled.button`
 display: flex;
-justify-contect: row;
+flex-direction: column;
+justify-content: center;
 align-items: row;
-border: 1px solid black;
-
-
+border: 1px solid yellow;
+`
+const ButtonsContainer = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: row;
 `
 
 function Quiz({quizData}) {
@@ -95,9 +97,11 @@ function Quiz({quizData}) {
           <UL>
             {questions[currentQuestion].options.map((option) => {
               return (
+                <ButtonsContainer>
                 <li key={option.id} onClick={() => optionClicked(option.isCorrect)}>
                   <Button>{option.text}</Button>
                 </li>
+                </ButtonsContainer>
               );
             })}
           </UL>
