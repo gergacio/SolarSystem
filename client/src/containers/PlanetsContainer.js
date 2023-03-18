@@ -2,7 +2,7 @@ import React,{ useState, useEffect } from "react";
 
 import Planet from "../components/Planet";
 import PlanetSelector from "../components/PlanetSelector";
-// import PlanetsList from "../components/PlanetsList";
+import PlanetsList from "../components/PlanetsList";
 import PlanetsService from "../services/PlanetsService";
 
 const PlanetContainer = () => {
@@ -67,7 +67,7 @@ const onPlanetSelected = function(_id){
 
     return(
         <div>
-          {/* <PlanetsList planets={planets}/>   --- show planets by list */} 
+          {/* <PlanetsList planets={planets}/>   --- show planets by list  */}
           <PlanetSelector planets={planets} onPlanetSelected={onPlanetSelected}/>
           {selectedPlanet ? <Planet selectedPlanet={selectedPlanet} selectedImage={selectedImage}/> : null}
         </div>

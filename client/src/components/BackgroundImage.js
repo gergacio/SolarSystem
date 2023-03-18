@@ -17,8 +17,6 @@ const BackgroundImage = () => {
              
              <Link><ItemImage src={image} alt="item"/></Link>
             
-             
-
         </div>
        
     );
