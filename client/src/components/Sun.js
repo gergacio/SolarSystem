@@ -14,12 +14,12 @@ const spintransition = {
  const Sun = () => {
     // const [ rotate, setRotate ] = useState(false);
     return(
-            <motion.div  
+            <Link><motion.div  
             animate={{rotate: 360}}//two moition div props using
             transition={spintransition}>
             {<BackgroundImage />}
             </motion.div>
-
+            </Link>
 
     );
  };

@@ -35,9 +35,6 @@ const PlanetSelector = ({planets, onPlanetSelected, selectorImage}) => {
                 <ImageOfPlanet type="image" value={planet._id} key={planet._id} src={planet.img} onClick={ClickHandler}/>
             </Link>
         );
-        
-        
-        
     });
     //event handler
     function ClickHandler(event){

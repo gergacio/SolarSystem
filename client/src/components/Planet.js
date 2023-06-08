@@ -13,7 +13,7 @@ background-color: black;
 font-size: 0.5em;
 border: 1px solid black;
 padding: 0.5em;
-text-align: center;
+text-align: left
 `
 const SoundButton = styled.button `
 background-color: black;
@@ -44,7 +44,7 @@ const Planet = ({selectedPlanet, selectedImage}) => {
             <span className="font-link">
                 <h1>Name: {selectedPlanet.name}</h1>
                 <SoundButton onClick={playsound} value={selectedPlanet.audio}>
-                🔊Pronunciation 
+                🔊{selectedPlanet.pronunciation} 
                 </SoundButton>
                 <h2>✨ Pronunciation: {selectedPlanet.pronunciation}</h2>
                 <h2>✨ Discovered by: {selectedPlanet.discovered_by}</h2>
@@ -55,7 +55,7 @@ const Planet = ({selectedPlanet, selectedImage}) => {
                 <h2>✨ Rotation in days: {selectedPlanet.rotation}</h2>
                 <h2>✨ Radius: {selectedPlanet.radius}</h2>
                 {/* <Link onClick={clickHandler} value={selectedPlanet.audio} src={selectedPlanet.audio}>- Play sound: </Link> */}
-                <button onClick={() => handleClick(selectedPlanet.source)}><small>external resources</small></button>
+                <button onClick={() => handleClick(selectedPlanet.source)}><small>External Resources</small></button>
                 </span>
             </div>
             

@@ -14,14 +14,10 @@ border: 2px solid black;
 padding: 20px;
 background-image: url(${url});
 color: white;
-
-
-
 min-height: 80vh;	
 `
 const UL = styled.ul`
 list-style:none
-
 `
 const Button = styled.button`
 display: flex;
@@ -30,7 +26,6 @@ justify-content: center;
 align-items: row;
 border: 5px solid black;
 border-color: black;
-
 `
 
 const ButtonsContainer = styled.div`
@@ -38,8 +33,6 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: row;
-
-
 `
 
 function Quiz({quizData}) {
@@ -110,7 +103,6 @@ function Quiz({quizData}) {
                 <li key={option.id} onClick={() => optionClicked(option.isCorrect)}>
                   <Button>{option.text}</Button>
                 </li>
-
                 </ButtonsContainer>
               );
             })}

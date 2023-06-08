@@ -10,12 +10,19 @@ height: 500px;
 
 
 const BackgroundImage = () => {
-  
+  const clickHandler = () => {
+    
+  }
 
     return(
         <div>
              
-             <Link><ItemImage src={image} alt="item"/></Link>
+             <Link 
+             onClick={clickHandler}>
+                <ItemImage 
+                src={image} 
+                alt="item"/>
+            </Link>
             
         </div>
        

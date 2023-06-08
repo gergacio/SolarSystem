@@ -22,13 +22,13 @@ const NavBar = () => {
     <Box>
     <UL>
       <li>
-        <StyledLink to="/">home</StyledLink>
+        <StyledLink to="/">Homeworld</StyledLink>
       </li>
       <li>
-        <StyledLink to="/learning">learn</StyledLink>
+        <StyledLink to="/learning">F.T.Learning</StyledLink>
       </li>  
       <li>
-        <StyledLink to="/quiz">quiz</StyledLink>
+        <StyledLink to="/quiz">Quiz</StyledLink>
       </li>  
     </UL>
     </Box>
