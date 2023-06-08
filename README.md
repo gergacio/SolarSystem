@@ -5,25 +5,25 @@
 ###
 
 <!-- ![image info](./client/src/images/sun.jpg) -->
-#
 ###
 ###
 ###
 ###
 ###
 ## Tools and technologies used
-#
+###
+###
 ###
 ###
 #### ✅ Database  MongoDB 6.0
-#### ✅ HTTP & API development  Express 4.18.1
-#### ✅ Front-end development  HTML5 | CSS3 | JS | React 18 | Framer Motion
+#### ✅ HTTP & API development  Express.js
+#### ✅ Front-end development  HTML | CSS | React 18 | Framer Motion
 #
 ## How to use the application
-#
+
 ###
 ###
-#### To run the application do the following:
+## To run the application do the following:
 #
 #### Fork the application by clicking on the Fork button at the top right of the screen.
 #### Clone the repository by clicking on the green code button.
