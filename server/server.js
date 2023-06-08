@@ -13,6 +13,7 @@ app.use(express.json())//help work with post, can get req.body
 //get db, get collection , get router, tell express to use router with given route
 MongoClient.connect('mongodb://127.0.0.1:27017', { useUnifiedTopology: true }, (err, client) => {
   if(err){
+    
     console.log(err);
   }
 
@@ -24,9 +25,10 @@ MongoClient.connect('mongodb://127.0.0.1:27017', { useUnifiedTopology: true }, (
   app.use('/api/quiz', quizRouter);
   app.use('/api/planets', planetsRouter);
   
-  app.listen(9000, function(){
-    console.log(`app listening on port ${this.address().port}`);
-  })
+})
+app.listen(9000, function(){
+  
+  console.log(`app listening on port ${this.address().port}`);
 })
 
 // REACT_APP_NASA_ENDPOINT="https://api.nasa.gov/"

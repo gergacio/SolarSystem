@@ -1,6 +1,6 @@
 //create database(planets), add collection
 
-use solarSystem
+use solarSystem;
 db.dropDatabase();
 
 db.quiz.insertMany([

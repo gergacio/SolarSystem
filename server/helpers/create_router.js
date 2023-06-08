@@ -2,7 +2,8 @@
 const express = require('express');
 const ObjectID = require('mongodb').ObjectID;
 
-//create func createRouter ..import in server pass collection from database and get obj as result, make express use this obj(Router)(pass route and router)
+//create func createRouter ..import in server pass collection from database and get obj as result, 
+//make express use this obj(Router)(pass route and router)
 const createRouter = function (collection) {
 
   const router = express.Router();//get router
@@ -64,7 +65,7 @@ const createRouter = function (collection) {
     const id = req.params.id;
     const updatedData = req.body;
     collection
-    .updatedOne(
+    .updateOne(
       {_id: ObjectID(id)},
       { $set: updatedData },
     )
