@@ -19,12 +19,12 @@
 #### ✅ HTTP & API development  Express.js
 #### ✅ Front-end development  HTML | CSS | React 18 | Framer Motion
 #
-### How to use the application
+## How to use the application
 ###
 ###
 ###
 ###
-## To run the application do the following:
+### To run the application do the following:
 ###
 ###
 ###
