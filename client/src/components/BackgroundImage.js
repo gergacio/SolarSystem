@@ -1,14 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
+const image = require("../images/sun.jpg");
+
+
+const ItemImage = styled.img `
+height: 500px;
+`
+
 
 const BackgroundImage = () => {
-    const ItemImage = styled.img `
-    height: 300px;
-    box-shadow: 2px 2px 4px grey;
-  `
+  
+
     return(
         <div>
-             <ItemImage src={require("../images/home_img.jpg")} alt="item" />
+             
+             <Link><ItemImage src={image} alt="item"/></Link>
+            
+             
 
         </div>
        

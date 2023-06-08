@@ -1,4 +1,5 @@
 import Planet from "./Planet";
+import styled from "styled-components";
 
 const PlanetsList = ({planets}) => {
     //turn arr of obj into list of Planet components

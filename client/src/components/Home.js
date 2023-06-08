@@ -1,14 +1,28 @@
 import React from "react";
-import BackgroundImage from "./BackgroundImage";
+//import BackgroundImage from "./BackgroundImage";
+import styled from 'styled-components';
+import Sun from "./Sun";
+import { Link } from "react-router-dom";
 
+
+const Box = styled.div`
+
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: black;
+min-height: 80vh;
+z-index: -1;
+`
 const Home = () => (
-  <div>
-  
-    <p>Home component render home page</p>
-    <h4>Home</h4>
-    <p>Welcome to our learning system homepage</p>
-    <BackgroundImage />
-  </div>
+  <Box>
+    {/* <BackgroundImage /> */}
+      <Sun />
+  </Box>
 );
 
 export default Home;
+
+
+    // <Link to="/quiz">
+    // </Link>

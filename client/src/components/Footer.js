@@ -1,11 +1,17 @@
 import React from "react";
+import styled from 'styled-components';
+const Box = styled.div`
+color: white;
+background-color: black;
+display: flex;
+justify-content: center;
+margin-top: auto;
+`
 
 const Footer = () => (
-  <div>
-    <p>--------------------------------------------</p>
-    <p>render footer component   Always appear</p>
+  <Box>
     <p> <small>&copy; Copyright 2022, Georgia Esau Georgi</small></p>
-  </div>
+  </Box>
 );
 
 export default Footer;
