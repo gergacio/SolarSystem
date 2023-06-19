@@ -25,9 +25,9 @@
 - macOS - v12.6
 
 ## Features
-List the ready features here:
-- Register/Login
+
 - Full CRUD on Planets.
+- Solar System quiz.
 
 ## Screenshots
 ![Example screenshot](./screenshots/sun_home_page.png)
