@@ -30,7 +30,7 @@ List the ready features here:
 - Full CRUD on Planets.
 
 ## Screenshots
-![Example screenshot](../solar_system_app/client/src/images/sun.jpg)
+![Example screenshot](./screenshots/sun_home_page.png)
 <!-- ![Example screenshot](./screenshots/shopska_salad.png) -->
 <!-- If you have screenshots you'd like to share, include them here. -->
 
