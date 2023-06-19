@@ -1,4 +1,4 @@
-# Bulgarian Cuisine App
+# Solar System App
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
@@ -14,6 +14,7 @@
 
 ## General Information
 - Solar System App is an Educational app based on the Planets of the Solar System. 
+
 ## Technologies Used
 - MongoDB -  v6.0.1
 - Express.js - v4.18.2
@@ -29,7 +30,7 @@ List the ready features here:
 - Full CRUD on Planets.
 
 ## Screenshots
-![Example screenshot](./screenshots/home_page.png)
+![Example screenshot](../solar_system_app/client/src/images/sun.jpg)
 <!-- ![Example screenshot](./screenshots/shopska_salad.png) -->
 <!-- If you have screenshots you'd like to share, include them here. -->
 
@@ -39,7 +40,8 @@ List the ready features here:
 - Fork the application by clicking on the Fork button at the top right of the screen.
 - Clone the repository by clicking on the green code button.
 - To clone the repository using HTTPS, under "HTTPS", click the cliboard icon.
-- To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, #### click SSH, then click the cliboard icon .
+- To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, 
+- click SSH, then click the cliboard icon .
 - To clone a repository using GitHub CLI, click GitHub CLI, then click the cliboard icon.
 - Open Terminal.
 - Change the current working directory to the location where you want the cloned directory.
